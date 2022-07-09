@@ -15,7 +15,10 @@ import javax.validation.constraints.NotNull;
 public class GeoLocation implements Serializable {
 
   @NotNull private Double latitude;
-  @NotNull private Double longitude;
+  @NotNull
+  private Double longitude;
+  
+  
 
   public GeoLocation() {}
 
