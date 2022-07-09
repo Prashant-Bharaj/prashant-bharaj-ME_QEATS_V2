@@ -23,9 +23,6 @@ public class UncaughtExceptionHandler implements Thread.UncaughtExceptionHandler
       logEventJsonObjNode.set("stacktrace", logStacktraceJsonArrNode);
     }
 
-    // If spotbugs are enabled, the build fail for the unused variable below.
-    int variableForTestingSpotbugs = 0;
-
     logEventJsonObjNode.put("cause", e.toString());
 
     log.error(logEventJsonObjNode.toString(), e);

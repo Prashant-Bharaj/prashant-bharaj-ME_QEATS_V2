@@ -1,4 +1,3 @@
-
 /*
  *
  * * Copyright (c) Crio.Do 2019. All rights reserved
@@ -7,19 +6,11 @@
 
 package com.crio.qeats.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonRootName;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.util.ArrayList;
-import java.util.List;
-import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
 // TODO: CRIO_TASK_MODULE_SERIALIZATION
 // Implement Restaurant class.
@@ -39,12 +30,10 @@ import lombok.ToString;
 // ]
 // }
 
-
-
-@NoArgsConstructor
-@Data
 @AllArgsConstructor
+@Data
 @JsonIgnoreProperties(ignoreUnknown = true)
+@NoArgsConstructor
 public class Restaurant {
     private String restaurantId;
     private String name;
@@ -56,4 +45,3 @@ public class Restaurant {
     private String closesAt;
     private ArrayList<String> attributes;
 }
-
