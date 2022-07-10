@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 // TODO: CRIO_TASK_MODULE_SERIALIZATION
 // Implement Restaurant class.
@@ -44,4 +45,12 @@ public class Restaurant {
     private String opensAt;
     private String closesAt;
     private ArrayList<String> attributes;
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getRestaurantId() {
+        return restaurantId;
+    }
 }
