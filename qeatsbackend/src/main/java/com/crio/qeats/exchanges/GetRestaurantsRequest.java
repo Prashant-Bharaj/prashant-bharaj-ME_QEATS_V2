@@ -22,17 +22,16 @@ import lombok.NoArgsConstructor;
 //  this class should be able to deserialize lat/long and optional searchFor from that.
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class GetRestaurantsRequest {
   @Max(value=90)
   @Min(value=-90)
   private Double latitude;
 
-  public GetRestaurantsRequest(@Max(90) @Min(-90) Double latitude,
-      @Max(180) @Min(-180) Double longitude) {
-    this.latitude = latitude;
-    this.longitude = longitude;
-  }
+  // public GetRestaurantsRequest(@Max(90) @Min(-90) Double latitude,
+  //     @Max(180) @Min(-180) Double longitude) {
+  //   this.latitude = latitude;
+  //   this.longitude = longitude;
+  // }
 
   @Max(value = 180)
   @Min(value = -180)
