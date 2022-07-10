@@ -27,11 +27,11 @@ public class GetRestaurantsRequest {
   @Min(value=-90)
   private Double latitude;
 
-  // public GetRestaurantsRequest(@Max(90) @Min(-90) Double latitude,
-  //     @Max(180) @Min(-180) Double longitude) {
-  //   this.latitude = latitude;
-  //   this.longitude = longitude;
-  // }
+  public GetRestaurantsRequest(@Max(90) @Min(-90) Double latitude,
+      @Max(180) @Min(-180) Double longitude) {
+    this.latitude = latitude;
+    this.longitude = longitude;
+  }
 
   @Max(value = 180)
   @Min(value = -180)
