@@ -38,6 +38,38 @@ import lombok.Setter;
 public class Restaurant {
     private String restaurantId;
     private String name;
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String getOpensAt() {
+        return opensAt;
+    }
+
+    public String getClosesAt() {
+        return closesAt;
+    }
+
+    public ArrayList<String> getAttributes() {
+        return attributes;
+    }
+
     private String city;
     private String imageUrl;
     private double latitude;

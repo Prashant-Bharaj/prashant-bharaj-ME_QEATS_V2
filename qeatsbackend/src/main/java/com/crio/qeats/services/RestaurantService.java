@@ -11,7 +11,6 @@ import com.crio.qeats.exchanges.GetRestaurantsRequest;
 import com.crio.qeats.exchanges.GetRestaurantsResponse;
 import java.time.LocalTime;
 
-
 public interface RestaurantService {
 
   /**

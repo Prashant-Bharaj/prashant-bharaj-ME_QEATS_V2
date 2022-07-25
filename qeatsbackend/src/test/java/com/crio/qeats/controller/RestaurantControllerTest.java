@@ -65,7 +65,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 //  Make modifications to the tests if necessary.
 //  Test RestaurantController by mocking RestaurantService.
 @SpringBootTest(classes = {QEatsApplication.class})
-@MockitoSettings(strictness = Strictness.STRICT_STUBS)
+@MockitoSettings(strictness = Strictness.STRICT_STUBS) // detect the extra-stubbing and redundent test cases
 @AutoConfigureMockMvc
 @DirtiesContext
 @ActiveProfiles("test")

@@ -20,8 +20,6 @@ public class GeoLocation implements Serializable {
   @NotNull
   private Double longitude;
   
-  
-
   public GeoLocation() {}
 
   public GeoLocation(Double latitude, Double longitude) {
